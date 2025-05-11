@@ -9,28 +9,34 @@
 
     <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="125dp"
+        android:background="#ffb70f"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="#ffb70f"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_menu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_menu"
-        app:layout_constraintBottom_toTopOf="@id/bottom_menu"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_menu" />
 
     <FrameLayout
         android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="650dp"
         android:background="#0ABAB5"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <FrameLayout
         android:id="@+id/top_menu"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="650dp"
         android:background="#0a46cd"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
