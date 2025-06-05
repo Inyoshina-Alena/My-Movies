@@ -131,7 +131,7 @@
         android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="700dp"
         android:background="#0ABAB5"
         app:layout_constraintBottom_toBottomOf="parent" />
 
