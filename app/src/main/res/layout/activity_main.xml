@@ -9,19 +9,50 @@
 
     <LinearLayout
         android:id="@+id/menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="125dp"
-        android:background="#ffb70f"
-        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/bottom_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/top_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/top_menu">
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/button_favorites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/button_see_it_later"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/button_compilations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/button" />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/button" />
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/bottom_menu"
