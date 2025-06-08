@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corner_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
     <FrameLayout
         android:id="@+id/top_menu1"
         android:layout_width="match_parent"
@@ -24,6 +35,22 @@
             android:textSize="20sp"/>
     </FrameLayout>
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/top_menu1">
+        
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/menu_name_title"
+            app:navigationIcon="@drawable/menu"
+            app:menu="@menu/top_app_bar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -31,7 +58,9 @@
         android:layout_margin="10dp"
         android:elevation="5dp"
         app:cardCornerRadius="15dp"
-        app:layout_constraintTop_toBottomOf="@id/top_menu1">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_bar_layout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -75,65 +104,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/top_bar" />
 
-    <LinearLayout
-        android:id="@+id/menu"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/corner_background"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/bottom_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_bar">
 
-        <Button
-            android:id="@+id/button_menu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:text="@string/btn_menu" />
 
-        <Button
-            android:id="@+id/button_favorites"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:text="@string/btn_favourites" />
 
-        <Button
-            android:id="@+id/button_see_it_later"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:text="@string/btn_see_it_later" />
 
-        <Button
-            android:id="@+id/button_compilations"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:text="@string/btn_compilations" />
-
-        <Button
-            android:id="@+id/button_settings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:background="?selectableItemBackgroundBorderless"
-            android:text="@string/btn_settings" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/bottom_menu"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="700dp"
-        android:background="#0ABAB5"
-        app:layout_constraintBottom_toBottomOf="parent" />
 
 
 

@@ -15,23 +15,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.buttonMenu.setOnClickListener{
-            Toast.makeText(this, "Меню", Toast.LENGTH_SHORT).show()
-        }
-        binding.buttonFavorites.setOnClickListener{
-            Toast.makeText(this, "Избранное", Toast.LENGTH_SHORT).show()
-        }
-        binding.buttonSeeItLater.setOnClickListener{
-            Toast.makeText(this, "Посмотреть позже", Toast.LENGTH_SHORT).show()
-        }
-        binding.buttonCompilations.setOnClickListener{
-            Toast.makeText(this, "Подборки", Toast.LENGTH_SHORT).show()
-        }
-        binding.buttonSettings.setOnClickListener{
-            Toast.makeText(this, "Настройки", Toast.LENGTH_SHORT).show()
-        }
-
     }
 
 
