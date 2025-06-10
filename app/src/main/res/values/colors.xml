@@ -4,4 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#ef861a</color>
     <color name="blue">#331aef</color>
+    <color name="colorPrimary">#DDA0DD</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/orange</color>
+
 </resources>

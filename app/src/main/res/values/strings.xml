@@ -2,9 +2,9 @@
     <string name="app_name">My Movies</string>
     <string name="button">BUTTON</string>
     <string name="disclaimer_text">Картинки взяты с сайта https://www.movieposters.com/</string>
-    <string name="btn_menu">МЕНЮ</string>
-    <string name="btn_favourites">ИЗБРАННОЕ</string>
-    <string name="btn_see_it_later">ПОСМОТРЕТЬ ПОЗЖЕ</string>
-    <string name="btn_compilations">ПОДБОРКИ</string>
-    <string name="btn_settings">НАСТРОЙКИ</string>
+    <string name="menu_settings_title">Настройки</string>
+    <string name="menu_favorites_title">Избранное</string>
+    <string name="menu_watch_later_title">Посмотреть позже</string>
+    <string name="menu_selections_title">Подборки</string>
+    <string name="menu_name_title">Search it!</string>
 </resources>
